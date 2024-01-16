@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>This is the home page</h1>
+     <% if (!user) {  %>
+        
+        <a href="/api/v1/user/login"><button>Log in</button></a>
+    <%  } else { %>
+        <a href="/api/v1/user/logout"><button>Log out</button></a>
+   <%   } %>
+    <a href="/secret"><button>Secret Page</button></a>
+    
+</body>
+</html>
